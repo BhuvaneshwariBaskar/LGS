@@ -22,9 +22,9 @@ export const HeaderNavComp = () => {
             <p className="text-white">YOUR BOOKINGS</p>
           </div>
         </Link>
-        <Link to="index.html" className="ml-5">
+        <Link to="/createFlight" className="ml-5">
           <div className="hover:border-b-[2px] hover:border-b-yellow-400 pb-2">
-            <p className="text-white">GET IN TOUCH</p>
+            <p className="text-white">Flight</p>
           </div>
         </Link>
         <Link to="index.html" className="ml-5">

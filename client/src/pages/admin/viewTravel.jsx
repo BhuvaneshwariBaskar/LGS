@@ -1,5 +1,7 @@
 import React, { useState ,useEffect} from "react";
 import {  getTravel } from "../../axios/admin.axios";
+import { Link } from "react-router-dom";
+import { ButtonYellowComp } from "../../components/ButtonYellowComp";
 
 const ViewTravel = () => {
   const [travel, setTravel] = useState();
@@ -45,6 +47,14 @@ const ViewTravel = () => {
                   <h1 className="font-semibold">Cost</h1>
                   <p className="mt-2">{data.cost_of_travel}</p>
                 </span>
+                <div className="px-5">
+                  <Link to="/createtravel">
+                    <ButtonYellowComp
+                      label={"createTravel"}
+                      extraStyle={"mt-5"}
+                    />
+                  </Link>
+                </div>
               </div>
             );
           })}
